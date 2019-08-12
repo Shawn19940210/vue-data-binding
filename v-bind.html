@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-bind实现</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="messege">
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+    // 目标：一打开页面就能渲染input数据；修改input，messege也自动改变；修改messege，input也自动改变。
+    const app = new Vue({
+        el: '#app',
+        data: {
+            messege: 'shawn'
+        }
+    })
+</script>
+
+</html>
